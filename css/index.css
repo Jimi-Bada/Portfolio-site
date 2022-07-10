@@ -1,0 +1,272 @@
+/* Root CSS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --main-color: #070707;
+  --bg: #cac7c7;
+  --border: 0.1rem solid rgba(21, 21, 21, 0.3);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none!important;
+  text-transform: capitalize;
+  transform: 0.2s linear;
+  
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+}
+
+.section {
+  padding: 2rem 7%;
+}
+
+/* Header Styling */
+
+.header {
+  border-bottom: var(--border);
+  background: rgb(39, 34, 62);
+  z-index: 1000;
+  min-height: 10vh;
+}
+.active, .nav-link:hover{
+  background: #fff;
+  color: #000!important;
+}
+
+
+
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+}
+/* About Styling */
+.about-section{
+ background:rgb(202, 199, 218);
+}
+
+.about-section .row .content p {
+  margin-top: -3rem;
+}
+
+.about-section .row .content button {
+  background: rgb(224, 222, 222);
+}
+
+.about-section .row .content button:hover {
+  background: rgb(39, 34, 62);
+  color: #fff;
+}
+
+.about-section .row .content a {
+  margin-top: -1rem;
+}
+
+/* Research Styling */
+
+
+
+.research .box-container .box {
+  border: 1px solid rgb(39, 34, 62);
+  border-radius: 0.8rem;
+}
+
+.research .box-container .box .image img {
+  object-fit: cover;
+}
+
+.research .box-container .box:hover .image img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.research .box-container .box .content .title:hover {
+  color: rgb(39, 34, 62);
+}
+
+.research .box-container .box .content .btn {
+  background: rgb(224, 222, 222);
+
+  color: #000;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.research .box-container .box .content .btn:hover {
+  background: rgb(39, 34, 62);
+  color: #fff;
+}
+
+ 
+/* Ministry Styling */
+
+.ministry {
+  background: rgb(202,199,218);
+}
+
+/* Business Styling */
+
+.business {
+  background: rgb(224, 222, 222);
+  padding: 10rem;
+}
+
+
+
+
+.business .row form .inputBox input {
+  width: 60%;
+  border-radius: 0.8rem;
+ 
+}
+
+.business .row form .btn {
+  background: #eee;
+  border: #000 2px solid;
+
+}
+
+.business .row form .btn:hover {
+  background: rgb(39, 34, 62);
+  color: #fff;
+}
+
+
+/* Research Page */
+.container {
+  padding: 6rem;
+  background: rgb(224, 222, 222);
+}
+
+
+
+.res-container .res1, .res-container .res2, .res-container .res3 {
+  border-radius: 5px;
+}
+
+
+/* About Page */
+.about-container {
+  background: rgb(224, 222, 222);
+}
+
+.about-container p {
+  font-size: 0.85rem;
+  padding: 0.75rem;
+}
+
+
+
+/* Business Page */
+
+.bus {
+  background: rgb(224, 222, 222);
+  padding: 10rem;
+}
+
+.inputForm {
+  border-radius: 5px;
+  top: 100px;
+}
+
+.bus .row form .inputB {
+  border: var(--border);
+  border-radius: 5px;
+}
+
+.bus .row form .inputB input {
+  width: 60%;
+  border-radius: 0.8rem;
+}
+
+.bus .row form .btn {
+  background: rgb(224, 222, 222);
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+.bus .row form .btn:hover {
+  background: rgb(39, 34, 62);
+  color: #fff;
+}
+
+/* Ministry Page */
+.min {
+  padding: 10rem;
+  background: rgb(224, 222, 222);
+}
+
+
+
+
+
+iframe {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 1025px) {
+
+  .research .box-container .box .content {
+    font-size: 1rem;
+  }
+  
+}
+
+@media (max-width: 770px) {
+html{
+  font-size: 0.5rem;
+}
+ .navbar-collapse {
+   position: absolute;
+   top: 52px;
+   height: max-content;
+   background: rgb(39, 34, 62);
+   right: -24px;
+   transition: 0.2s ease-in-out;
+   width: 48%;
+   text-align: center;
+   
+
+ }
+
+
+
+
+} 
+
+@media (max-width: 585px) {
+
+  html{
+    font-size: 0.5rem;
+  }
+
+} 
+@media (min-width: 1200px) {
+  .research .box-container .box .content p{
+    font-size: 0.8rem;
+    width: 50ch;
+  }
+  }
+
+
+
+
+
+
+
